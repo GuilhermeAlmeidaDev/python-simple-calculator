@@ -1,30 +1,38 @@
 # Importing area
+from os import system
 from operations.addition import add
 from operations.subtraction import subtract
 from operations.multiplication import multiply
 from operations.division import divide
+from operations.percent import percent
+from operations.root import square_root
 
 # Dictionary to store the operations
 operations = {
     "+": add,
     "-": subtract,
     "*": multiply,
-    "/": divide
+    "/": divide,
+    "%": percent,
+    "root": square_root
 }
 
-def user_input():
+
+def user_input_cli():
     while True:
         try:
             # Get the user input for the first number
             num1 = float(input("Enter the first number: "))
 
             # Get the user input for the operator
-            operator = input("Enter the operation (+, -, *, /): ")
+            operator = input("Enter the operation (+, -, *, /, %, root): ")
 
             # Check if the operator is valid
             if operator not in operations:
                 print("Invalid operator")
                 continue
+            elif operator == "root":
+                return operations[operator](num1)
 
             # Get the user input for the second number
             num2 = float(input("Enter the second number: "))
@@ -38,7 +46,7 @@ def user_input():
             continue
 
 def main():
-    result = user_input()
+    result = user_input_cli()
     if result == int(result):
         return print(f"Result: {int(result)}")
     else:
@@ -46,5 +54,6 @@ def main():
     
 
 if __name__ == "__main__":
+    system("cls")
     main()
 
