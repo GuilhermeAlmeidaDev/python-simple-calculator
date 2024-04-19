@@ -11,16 +11,20 @@ def percent(x: float, y: float) -> float:
 
     Returns:
         float: The result of the percentage calculation.
+
+    Raises:
+        TypeError: If the arguments are not numbers.
+        ZeroDivisionError: If the second argument is zero.
     """
 
     try:
         return (x * y) / 100
     
-    except TypeError:
-        return "Error: Arguments must be numbers"
+    except ZeroDivisionError as e:
+        return f"Error: {e}"
     
-    except ZeroDivisionError:
-        return "Error: Cannot divide by zero"
+    except TypeError as e:
+        return f"Error: {e}"
 
 
 if __name__ == "__main__":

@@ -1,11 +1,8 @@
+# calculator/cli_calculator.py
+
 # Importing area
 from os import system
-from operations.addition import add
-from operations.subtraction import subtract
-from operations.multiplication import multiply
-from operations.division import divide
-from operations.percent import percent
-from operations.root import square_root
+from app.operations import add, subtract, multiply, divide, percent, square_root
 
 # Dictionary to store the operations
 operations = {
