@@ -13,9 +13,9 @@ This calculator is implemented using Python and it's purpose is to demonstrate h
 
 ## Calculator Screenshot (GUI and CLI Versions)
 
-![CLI](images\CLI_Calculator.png)
-
-![GUI](images\GUI_Calculator.png)
+<img src='./images/CLI_Calculator.png' title='CLI Calculator Print'/>
+<br>
+<img src='./images/GUI_Calculator.png' title='GUI Calculator Print'/>
 
 ## How to use the calculator in CLI mode
 
