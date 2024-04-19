@@ -54,6 +54,8 @@ If you find a bug in the calculator, please create a new issue in the repository
 
 Below you can find a list of known issues with the calculator (mostly GUI):
 
+- The GUI calculator cannot handle more than 1 operation in a single expression
+- The GUI calculator does not support negative numbers
 - The GUI calculator does not support keyboard input
 - The GUI calculator has some layout issues on smaller screens
 - The GUI calculator cannot handle multiple operations in a single expression

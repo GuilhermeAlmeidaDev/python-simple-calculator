@@ -32,9 +32,9 @@ def button_click(value):
     current = entry.get()
     
     # If the maximum number of operations is already reached, perform the calculation first
-    if len(current.split()) == 3:
-        calculate()
-        current = entry.get()
+    # if len(current.split()) == 3:
+    #     calculate()
+    #     current = entry.get()
     
     entry.delete(0, tk.END)
     entry.insert(tk.END, current + value)
