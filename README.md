@@ -11,9 +11,11 @@ This calculator is implemented using Python and it's purpose is to demonstrate h
 - Percentage
 - Square root
 
-## Calculator Screenshot
+## Calculator Screenshot (GUI and CLI Versions)
 
-[insert the calculator screenshot here]
+![CLI](images\CLI_Calculator.png)
+
+![GUI](images\GUI_Calculator.png)
 
 ## How to use the calculator in CLI mode
 
